@@ -3,6 +3,7 @@ import { Box, styled } from "@mui/material";
 import AppRoutes from "../Routes";
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import NavDrawer from "./NavDrawer";
 
 const DrawerWidth = 240;
 
@@ -35,6 +36,7 @@ export default function AdminApp() {
       height: '100vh'
     }}>
       <Router>
+        <NavDrawer open={open} setOpen={setOpen}/>
         <Main open={open}>
           <AppRoutes />
         </Main>
