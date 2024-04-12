@@ -56,8 +56,8 @@ secondary:{
       styleOverrides: {
         paper: {
           width: DrawerWidth,          
-          background: Colors.primary,
-          color: Colors.secondary,
+          background: Colors.transparent,
+          color: Colors.light,
         }
       }
     },
