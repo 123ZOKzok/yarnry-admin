@@ -82,7 +82,7 @@ export default function Products() {
   return (
     <>
       <Typography sx={{ mb: 1 }} variant="h4"></Typography>
-      <Button startIcon={<Add />} variant="contined" onClick={handleAddProduct}>
+      <Button startIcon={<Add />} variant="outlined" onClick={handleAddProduct}>
         Add Product
       </Button>
       <TableContainer>
@@ -102,7 +102,7 @@ export default function Products() {
               <TableRow key={p.id}>
                 <TableCell>{p.name}</TableCell>
                 <TableCell>{p.price}</TableCell>
-                <TableCell>{p.qty}</TableCell>
+                <TableCell>{p.quantity}</TableCell>
                 <TableCell>{p.sku}</TableCell>
                 <TableCell>{p.description}</TableCell>
                 <TableCell>
